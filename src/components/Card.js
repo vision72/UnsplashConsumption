@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
 	},
 	grid: {
 		paddingLeft: 10
+	},
+	media: {
+		height: 200
 	}
 }));
 
@@ -68,7 +71,7 @@ const CardLayout = (props) => {
 					<Fade in={open}>
 						<div className={classe.paper}>
 							{/* user name, likes count, user's social links, */}
-							<CardMedia className={classes.media} image={item.urls.full} title={item.alt_description} />
+							<CardMedia className={classe.media} image={item.urls.full} title={item.alt_description} />
 							<Grid container direction="row" alignItems="center">
 								<Grid item>
 									<Avatar alt={item.user.name} src={item.user.profile_image.large} />
